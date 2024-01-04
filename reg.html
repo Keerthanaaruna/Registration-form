@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="reg.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="box">
+    		<!----login box----->
+    		<div class="login-box" id="login">
+    			
+    			<div class="top-head">
+    				<h3>Registration Form</h3>
+                </div>
+    				<div class="input-grp">
+                        <div class="input-field">
+    						<input type="text" class="input-box" id="fn">
+    						<label for="fn">First Name</label>
+    					</div>
+
+    					 <div class="input-field">
+    						<input type="text" class="input-box" id="ln">
+    						<label for="ln">Last Name</label>
+    					</div>
+
+    					 <div class="input-field">
+    						<input type="text" class="input-box" id="mbno">
+    						<label for="mbno">Mobile Number</label>
+    					</div>
+    					
+    					<div class="input-field">
+    						<input type="text" class="input-box" id="loginemail">
+    						<label for="loginemail">Email Address</label>
+    					</div>
+
+    			        <div class="input-field">
+    						<input type="Password" class="input-box" id="logpass">
+    						<label for="logpass">Password</label>
+    					
+    					<div class="eye-area">
+    						<div class="eye-box" onclick=" mylogpass() ">
+    							<i class="fa-regular fa-eye" id="eye"></i>
+    							<i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+    						</div>
+    					</div>
+</div>
+</div>
+    				
+    				<div class="remember">
+    					<input type="checkbox" id="formcheck" class="check" >
+    					<label for="formcheck"> Remember me</label>
+    				</div>
+    				<div class="input-field">
+    					<input type="submit" class="input-submit" value="Register">
+    				</div>
+    				
+    			
+    		</div>
+    		<!-------register------->
+    	</div>
+    </div>
+<script>
+    function mylogpass(){
+    	var a = document.getelementbyid('logpass');
+    	var b = document.getelementbyid('eye');
+    	var c = document.getelementbyid('eye-slash');
+
+    	if(a.type === "password"){
+    		a.type = "text";
+    		b.style.opacity = "0";
+    		c.style.opacity = "1";
+    	}
+
+    	else{
+    		a.type = "password";
+    		b.style.opacity = "1";
+    		c.style.opacity = "0";
+    	}
+
+
+    }
+</script>
+</body>
+</html>
